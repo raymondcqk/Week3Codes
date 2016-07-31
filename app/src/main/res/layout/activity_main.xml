@@ -12,9 +12,9 @@
     <!--及在name属性中引用对应的fragment类-->
     <fragment
         android:name="com.raymondqk.week3musicplayer.MyFragment"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="300dp"
+        android:layout_gravity="center"
         android:tag="@string/app_name"
-
         />
 </LinearLayout>
