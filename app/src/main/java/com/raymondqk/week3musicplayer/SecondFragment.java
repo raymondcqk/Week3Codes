@@ -29,11 +29,13 @@ public class SecondFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Log.i(TAG,"Second-onCreate");
     }
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        Log.i(TAG,"Second-onCreateView");
         View view = inflater.inflate(R.layout.fragment_second,container,false);
         return view;
     }

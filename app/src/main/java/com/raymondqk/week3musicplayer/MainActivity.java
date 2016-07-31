@@ -21,6 +21,7 @@ public class MainActivity extends Activity {
         public void onClick(View view) {
             switch (view.getId()){
                 case R.id.btn_first:
+                    //重新开启事务
                     mFt = mFg.beginTransaction();
                     mFt.hide(mSecondFragment);
                     mFt.show(mMyFragment);
@@ -46,7 +47,7 @@ public class MainActivity extends Activity {
         mFg = getFragmentManager();
         mFt = mFg.beginTransaction();
 
-        mMyFragment = new MyFragment();
+        mMyFragment = MyFragment.newInstance("不一般的实例化方式");
         mSecondFragment = new SecondFragment();
         mFt.add(R.id.container_fragment, mSecondFragment);
         mFt.add(R.id.container_fragment, mMyFragment);
@@ -58,11 +59,6 @@ public class MainActivity extends Activity {
         mBtn_second = (Button) findViewById(R.id.btn_second);
         mBtn_first.setOnClickListener(mListener);
         mBtn_second.setOnClickListener(mListener);
-//        Fragment fragment = fg.findFragmentById(R.id.myFragment);
-//        if (fragment instanceof MyFragment){
-//            //向下造型
-//            MyFragment myFragment = (MyFragment) fragment;
-//            myFragment.setText("通过FindFragmentById获得该fragment对象");
-//        }
+
     }
 }

@@ -16,13 +16,24 @@ import android.widget.Toast;
 public class MyFragment extends Fragment {
 
     public static final String TAG = MyFragment.class.getSimpleName();
+    public static final String CONTENT = "CONTENT";
     private View mView;
     private TextView mTv;
+    private String mContent;
 
+    public static MyFragment newInstance(String content){
+        MyFragment myFragment = new MyFragment();
+        Bundle bundle = new Bundle();
+        bundle.putString(CONTENT,content);
+        myFragment.setArguments(bundle);
+        return myFragment;
+    }
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Log.i(TAG,"MyFragment---onCreate()");
+        Bundle bundle = getArguments();
+        mContent = bundle.getString(CONTENT);
         //执行顺序 1
     }
     @Nullable
@@ -33,6 +44,7 @@ public class MyFragment extends Fragment {
         Log.i(TAG,"MyFragment---onCreateView()");
         mView = inflater.inflate(R.layout.fragment_item,container,false);
         mTv = (TextView) mView.findViewById(R.id.fg_text);
+        mTv.setText(mContent);
         Toast.makeText(getActivity(), mTv.getText().toString(),Toast.LENGTH_SHORT).show();
         return mView;
         //执行顺序 2
