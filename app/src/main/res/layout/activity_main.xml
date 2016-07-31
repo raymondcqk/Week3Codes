@@ -3,6 +3,12 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent"
               android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/container_fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"></LinearLayout>
 
     <!--必须要有id 或tag，否则会产生异常而退出activity-->
     <!--android:id="@+id/myfragment"-->
@@ -10,11 +16,21 @@
     <!--静态加载Fragment-->
     <!--通过 在 activity的布局文件仲加入Fragment标签-->
     <!--及在name属性中引用对应的fragment类-->
+    <!--要加载哪个fragment就通过name来引用对应的fragment类名-->
+    <!--<fragment-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:name="com.raymondqk.week3musicplayer.MyFragment"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="300dp"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:tag="@string/app_name"-->
+        <!--/>-->
     <fragment
+        android:layout_marginTop="20dp"
         android:name="com.raymondqk.week3musicplayer.MyFragment"
         android:layout_width="wrap_content"
         android:layout_height="300dp"
         android:layout_gravity="center"
-        android:tag="@string/app_name"
+        android:id="@+id/myFragment"
         />
 </LinearLayout>
