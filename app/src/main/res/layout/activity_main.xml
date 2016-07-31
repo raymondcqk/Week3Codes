@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:orientation="vertical"
               android:layout_width="match_parent"
-              android:layout_height="match_parent">
+              android:layout_height="match_parent"
+              android:orientation="vertical">
 
+    <!--必须要有id 或tag，否则会产生异常而退出activity-->
+    <!--android:id="@+id/myfragment"-->
+    <!--没有background等样式类型的属性，只有调整位置、大小的以及Fragment相关的-->
+    <!--静态加载Fragment-->
+    <!--通过 在 activity的布局文件仲加入Fragment标签-->
+    <!--及在name属性中引用对应的fragment类-->
+    <fragment
+        android:name="com.raymondqk.week3musicplayer.MyFragment"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:tag="@string/app_name"
+
+        />
 </LinearLayout>
