@@ -1,4 +1,4 @@
 <resources>
     <string name="app_name">Week3 MusicPlayer</string>
-    <string name="fragment_text">欢迎来到Fragment</string>
+    <string name="fragment_text">欢迎来到Fragment\n我是第一个Fragment</string>
 </resources>
