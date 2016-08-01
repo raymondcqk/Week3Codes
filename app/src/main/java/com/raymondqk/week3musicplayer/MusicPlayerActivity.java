@@ -32,10 +32,8 @@ public class MusicPlayerActivity extends Activity implements View.OnClickListene
                 Log.i(MusicService.TAG, "Activity onServiceConnected -- 成功连接服务 MusicService引用获取成功");
             }
         }
-
         @Override
         public void onServiceDisconnected(ComponentName name) {
-
         }
     };
     private Button mBtn_get_time;
@@ -87,7 +85,6 @@ public class MusicPlayerActivity extends Activity implements View.OnClickListene
                     Toast.makeText(this, "Service未绑定", Toast.LENGTH_SHORT).show();
                 }
                 break;
-
         }
     }
 
