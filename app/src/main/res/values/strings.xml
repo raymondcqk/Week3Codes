@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">Week3 MusicPlayer</string>
     <string name="fragment_text">欢迎来到Fragment\n我是第一个Fragment</string>
+    <string name="handler_text">arg1准备倒计时度咯</string>
+    <string name="handler_text_obj">obj准备倒计时度咯</string>
+    <string name="arg1over">Arg1倒计时结束</string>
+    <string name="obj_over">Obj倒计时结束</string>
 </resources>
