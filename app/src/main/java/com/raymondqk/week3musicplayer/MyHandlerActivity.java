@@ -116,6 +116,7 @@ class MyHandler extends Handler{
                 }
                 Log.i("Test","倒计时中...若不在出现则表示倒计时结束，不在进入handleMessage");
                 break;
+
         }
     }
 }
