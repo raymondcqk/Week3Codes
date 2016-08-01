@@ -14,11 +14,19 @@
             <!--</intent-filter>-->
         </activity>
         <activity android:name=".MyHandlerActivity">
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN"></action>-->
+                <!--<category android:name="android.intent.category.LAUNCHER"></category>-->
+            <!--</intent-filter>-->
+        </activity>
+        <activity android:name=".MusicPlayerActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"></action>
                 <category android:name="android.intent.category.LAUNCHER"></category>
             </intent-filter>
         </activity>
+
+        <service android:name=".MusicService" android:enabled="true" android:exported="true"/>
     </application>
 
 </manifest>

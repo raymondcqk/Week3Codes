@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btn_start_service"
+        style="@style/btn_service"
+        android:text="@string/start_service"/>
+
+    <Button
+        android:id="@+id/btn_stop_service"
+        style="@style/btn_service"
+        android:layout_below="@+id/btn_start_service"
+        android:text="@string/stop_service"/>
+
+    <Button
+        android:id="@+id/btn_bind_service"
+        style="@style/btn_service"
+        android:layout_below="@+id/btn_stop_service"
+        android:text="@string/bind_service"/>
+
+    <Button
+        android:id="@+id/btn_unbind_service"
+        style="@style/btn_service"
+        android:layout_below="@+id/btn_bind_service"
+        android:text="@string/unbind_service"/>
+    <Button
+        android:id="@+id/btn_get_time"
+        style="@style/btn_service"
+        android:layout_below="@+id/btn_unbind_service"
+        android:text="@string/get_time"/>
+
+</RelativeLayout>
